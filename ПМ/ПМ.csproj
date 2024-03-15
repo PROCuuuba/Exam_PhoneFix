@@ -110,7 +110,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateTxT.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>

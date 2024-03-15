@@ -12,6 +12,7 @@ namespace ПМ
         public PhonesRepair()
         {
             InitializeComponent();
+            UpdateDataGridView();
 
             comboBox1.Items.Add("Свободные заказы");
             comboBox1.Items.Add("В работе");
@@ -43,11 +44,6 @@ namespace ПМ
                 }
             }
 
-            UpdateDataGridView();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
             UpdateDataGridView();
         }
 

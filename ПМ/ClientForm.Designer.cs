@@ -39,8 +39,9 @@
             this.изменитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
+            this.buttonPrintReceipt = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -135,19 +136,6 @@
             this.удалитьToolStripMenuItem.Text = "Удалить";
             this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
             // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.Tan;
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonUpdate.ForeColor = System.Drawing.Color.Snow;
-            this.buttonUpdate.Location = new System.Drawing.Point(51, 327);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(153, 50);
-            this.buttonUpdate.TabIndex = 19;
-            this.buttonUpdate.Text = "Обновить";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
             // npgsqlDataAdapter1
             // 
             this.npgsqlDataAdapter1.DeleteCommand = null;
@@ -155,13 +143,40 @@
             this.npgsqlDataAdapter1.SelectCommand = null;
             this.npgsqlDataAdapter1.UpdateCommand = null;
             // 
+            // buttonPrintReceipt
+            // 
+            this.buttonPrintReceipt.BackColor = System.Drawing.Color.Tan;
+            this.buttonPrintReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPrintReceipt.ForeColor = System.Drawing.Color.Snow;
+            this.buttonPrintReceipt.Location = new System.Drawing.Point(594, 324);
+            this.buttonPrintReceipt.Name = "buttonPrintReceipt";
+            this.buttonPrintReceipt.Size = new System.Drawing.Size(153, 50);
+            this.buttonPrintReceipt.TabIndex = 20;
+            this.buttonPrintReceipt.Text = "Чек";
+            this.buttonPrintReceipt.UseVisualStyleBackColor = false;
+            this.buttonPrintReceipt.Click += new System.EventHandler(this.buttonPrintReceipt_Click);
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.Tan;
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.Snow;
+            this.buttonAdd.Location = new System.Drawing.Point(51, 324);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(153, 50);
+            this.buttonAdd.TabIndex = 21;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonPrintReceipt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelDate);
@@ -172,7 +187,6 @@
             this.ShowIcon = false;
             this.Text = "PhoneFix";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientForm_FormClosing);
-            this.Load += new System.EventHandler(this.ClientForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -186,11 +200,12 @@
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem изменитьToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripMenuItem удалитьToolStripMenuItem;
         private Npgsql.NpgsqlDataAdapter npgsqlDataAdapter1;
+        private System.Windows.Forms.Button buttonPrintReceipt;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }

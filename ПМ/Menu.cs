@@ -31,10 +31,5 @@ namespace ПМ
         {
             Application.Exit();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CreateTxT.CreatDirectionTxt("Кошелев Дмитрий Юрьевич", "Сломан экран", 5000.00, "Баркалов Илья Александрович", "Успешная починка телефона", "Samsung Galaxy A50");
-        }
     }
 }
